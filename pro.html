@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="vi">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Nguyên Cinema</title>
+  <link rel="stylesheet" href="pro.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+
+<body>
+
+  <header>
+    <img src="ảnh/logo.png" alt="logo">
+    <h1>Nguyên's Cinema</h1>
+    <p>&#x1F1F3</p>
+    <a href="dangnhap.html"><i class="fa-regular fa-circle-user"></i></a>
+  </header>
+
+  <nav>
+    
+    
+    <!-- Search box -->
+    <form class="search-box" onsubmit="return false;">
+      <input type="text" id="searchInput" placeholder="Tìm phim...">
+      <button type="button" onclick="searchMovie()"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </form>
+  </nav>
+
+  <img class="slides" src="ảnh/anh 1.1.jpg" width="100%">
+  <img class="slides" src="ảnh/anh 1.2.png" width="100%">
+  <img class="slides" src="ảnh/anh 1.png" width="100%">
+
+  <script>
+    w3.slideshow(".slides", 1500);
+  </script>
+
+  <div class="container">
+    <h2>NOW SHOWING</h2>
+    <div class="grid">
+      <!-- Card 1 -->
+      <label for="modal1" class="movie-card">
+        <img src="https://starlight.vn/Areas/Admin/Content/Fileuploads/images/Poster2024/Lam-giau-voi-ma-2-new.jpg"
+          alt="">
+        <div class="info">
+          <h4>Làm Giàu Với Ma: Cuộc Chiến Hột Xoàn</h4>
+          <p>Comedy | Action | 120 mins</p>
+        </div>
+      </label>
+      <input type="checkbox" id="modal1">
+      <div class="overlay">
+        <div class="modal">
+          <iframe width="560" height="500" src="https://www.youtube.com/embed/GAV25aB_1KE?si=xxla3c7-ZFyURfyS"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <h2>Làm Giàu Với Ma: Cuộc Chiến Hột Xoàn</h2>
+          <p>Hành trình đầy bi hài của 5 con người với những toan tính khác nhau nhằm đưa thi thể minh tinh Anh Thư
+            (Ngọc
+            Xuân) về quê nhà, đổi lại, hồn ma của cô hứa sẽ trả cho họ chiếc nhẫn kim cương trị giá 9 tỷ. Ai sẽ là người
+            giành được phần thưởng, hay chuyến đi sẽ bộc lộ phần xấu xa nhất bên trong họ?</p>
+          <label for="modal1" class="close-btn">Đóng</label>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <label for="modal2" class="movie-card">
+        <img
+          src="https://starlight.vn/Areas/Admin/Content/Fileuploads/images/Poster2024/The-conjuring-Nghi-le-cuoi-cung.jpg"
+          alt="">
+        <div class="info">
+          <h4>The Conjuring: Nghi Lễ Cuối Cùng</h4>
+          <p>Horror | 130 mins</p>
+        </div>
+      </label>
+      <input type="checkbox" id="modal2">
+      <div class="overlay">
+        <div class="modal">
+          <iframe width="560" height="500" src="https://www.youtube.com/embed/sbsNPOzdBg0?si=bQ--qJ65B92q4MgK"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <h2>The Conjuring: Nghi Lễ Cuối Cùng</h2>
+          <p>Đến với hồi kết của vũ trụ The Conjuring, The Conjuring: Nghi Lễ Cuối Cùng theo chân cặp đôi trừ tà Ed và
+            Lorraine Warrent đối mặt với một thế lực ác quỷ, kẻ đã reo rắc nỗi kinh hoàng cho gia đình Smurl trong suốt
+            hơn một thập kỷ. Bộ phim lần này cũng được dựa trên một trong những vụ án có thật mà gia đình Warren đã trải
+            qua.</p>
+          <label for="modal2" class="close-btn">Đóng</label>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <label for="modal3" class="movie-card">
+        <img
+          src="https://thainguyen.gov.vn/documents/130294/23578476/mua+do+11111.jpg/fd749fca-de8b-433a-8725-fd23ccd1aa1d?t=1756087507935"
+          alt="">
+        <div class="info">
+          <h4>Mưa Đỏ</h4>
+          <p>Drama | History | 120 mins</p>
+        </div>
+      </label>
+      <input type="checkbox" id="modal3">
+      <div class="overlay">
+        <div class="modal">
+          <iframe width="560" height="500" src="https://www.youtube.com/embed/BD6PoZJdt_M?si=8qKUhBw2S7gJXAM5"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <h2>Mưa Đỏ</h2>
+          <p>“Mưa Đỏ” - Phim truyện điện ảnh về đề tài chiến tranh cách mạng, kịch bản của nhà văn Chu Lai, lấy cảm hứng
+            và hư cấu từ sự kiện 81 ngày đêm chiến đấu anh dũng, kiên cường của nhân dân và cán bộ, chiến sĩ bảo vệ
+            Thành
+            Cổ Quảng Trị năm 1972. Tiểu đội 1 gồm toàn những thanh niên trẻ tuổi và đầy nhiệt huyết là một trong những
+            đơn
+            vị chiến đấu, bám trụ tại trận địa khốc liệt này. Bộ phim là khúc tráng ca bằng hình ảnh, là nén tâm nhang
+            tri
+            ân và tưởng nhớ những người con đã dâng hiến tuổi thanh xuân cho đất nước, mang âm hưởng của tình yêu, tình
+            đồng đội thiêng liêng, là khát vọng hòa bình, hoà hợp dân tộc của nhân dân Việt Nam.</p>
+          <label for="modal3" class="close-btn">Đóng</label>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <label for="modal4" class="movie-card">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/vi/thumb/b/bb/%C3%81p_ph%C3%ADch_Thanh_g%C6%B0%C6%A1m_di%E1%BB%87t_qu%E1%BB%B7-_V%C3%B4_h%E1%BA%A1n_th%C3%A0nh.jpg/250px-%C3%81p_ph%C3%ADch_Thanh_g%C6%B0%C6%A1m_di%E1%BB%87t_qu%E1%BB%B7-_V%C3%B4_h%E1%BA%A1n_th%C3%A0nh.jpg"
+          alt="">
+        <div class="info">
+          <h4>Thanh Gươm Diệt Quỷ: Vô Hạn Thành</h4>
+          <p>Action | Anime | 120 mins</p>
+        </div>
+      </label>
+      <input type="checkbox" id="modal4">
+      <div class="overlay">
+        <div class="modal">
+          <iframe width="560" height="500" src="https://www.youtube.com/embed/BSkUboiyeCo?si=AiVRyLYiXqX1rIKy"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <h2>Thanh Gươm Diệt Quỷ: Vô Hạn Thành</h2>
+          <p>Bộ phim đầu tiên trong bộ ba phim Thanh Gươm Diệt Quỷ: Vô Hạn Thành. Đây là phần bắt đầu cho trận chiến
+            cuối
+            cùng giữa Sát Quỷ Đoàn cùng Muzan và bè lũ quỷ tại Vô Hạn Thành. Bộ phim quy tụ gần như toàn bộ Trụ Cột &
+            các
+            nhân vật chính đối đầu nhóm Thượng Huyền mạnh nhất của Muzan; cùng bối cảnh Vô Hạn Thành phức tạp, kiến trúc
+            đảo lộn và di chuyển liên tục hứa hẹn mang đến những trận chiến đấu đầy mãn nhãn.</p>
+          <label for="modal4" class="close-btn">Đóng</label>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <label for="modal5" class="movie-card">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/en/9/95/Chainsaw_Man_Reze_Arc_movie_poster.jpg"
+          alt="">
+        <div class="info">
+          <h4>Chainsaw Man – The Movie: Chương Reze</h4>
+          <p>Action | Anime | 100 mins</p>
+        </div>
+      </label>
+      <input type="checkbox" id="modal5">
+      <div class="overlay">
+        <div class="modal">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/tAzAhDNdehs?si=Fp0JNPOXijaKjdEs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <h2>Chainsaw Man – The Movie: Chương Reze</h2>
+          <p>Chainsaw Man – The Movie: Chương Reze theo chân Denji khi anh gặp Reze – một cô gái bí ẩn mang đến cả tình yêu lẫn hiểm họa. Trong thế giới đầy quỷ dữ và phản bội, Denji phải chiến đấu để sống còn… và để hiểu trái tim mình.</p>
+          <label for="modal5" class="close-btn">Đóng</label>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <label for="modal6" class="movie-card">
+        <img
+          src="ảnh/avatar.png"
+          alt="">
+        <div class="info">
+          <h4>Avatar: Dòng Chảy Của Nước</h4>
+          <p>Action | Science Fiction | 190 mins</p>
+        </div>
+      </label>
+      <input type="checkbox" id="modal6">
+      <div class="overlay">
+        <div class="modal">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/gq2xKJXYZ80?si=SSMCxM1Kc6benldc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <h2>Avatar: Dòng Chảy Của Nước</h2>
+          <p>Jake Sully sống cùng gia đình mới của mình trên hành tinh Pandora. Khi một mối đe dọa quen thuộc quay trở lại để kết thúc những gì đã bắt đầu trước đó, Jake phải hợp tác với Neytiri và quân đội của tộc Na'vi để bảo vệ hành tinh của họ.</p>
+          <label for="modal6" class="close-btn">Đóng</label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="contact">
+      <h4>CONTACT</h4>
+      <br>
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-discord"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-tiktok"></i>
+    </div>
+
+    <div class="about">
+      <h4>CINEMA</h4>
+      <br>
+      <p>Nguyên cinema</p>
+      <p>&copy; Copyright by Nguyên</p>
+      <p>FAQ</p>
+      <p>About us</p>
+      <p>Our services</p>
+    </div>
+
+    <div>
+      <h4>EXPLORE</h4>
+      <br>
+      <p>On showing</p>
+      <p>Schedule</p>
+      <p>Locations</p>
+    </div>
+
+    <div class="map">
+      <h4>LOCATION</h4>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.3504956805077!2d105.78267587494058!3d20.978582880658212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ad8f726b3335%3A0x5e5cd9ae6295b239!2sMindX%20Technology%20School%20(Tr%E1%BA%A7n%20Ph%C3%BA)!5e0!3m2!1svi!2s!4v1758116513086!5m2!1svi!2s"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </footer>
+
+  <script src="./pro.js"></script>
+</body>
+
+</html>
