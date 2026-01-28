@@ -354,46 +354,120 @@ input[type="checkbox"]:checked+.overlay {
     color: #000000;
 }
 
-/* Footer */
+/* Footer Modern Style */
 footer {
-    background: #111;
-    color: #ddd;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 40px;
+    background: #0a0a0a; /* Đen sâu hơn tạo cảm giác sang trọng */
+    color: #bbb;
+    padding: 60px 40px 20px;
+    border-top: 3px solid pink;
 }
 
-footer div {
-    flex: 1;
-    min-width: 200px;
-    margin: 10px;
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
 }
 
-footer h4 {
-    margin-bottom: 10px;
+.footer-column h4 {
     color: #fff;
-    border-bottom: pink solid;
-}
-
-footer p {
-    font-size: 14px;
-    margin: 4px 0;
-}
-
-footer i {
-    margin-right: 10px;
     font-size: 18px;
-    cursor: pointer;
+    margin-bottom: 25px;
+    position: relative;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-footer i:hover {
+/* Đường gạch chân trang trí dưới tiêu đề */
+.footer-column h4::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 40px;
+    height: 2px;
+    background: pink;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 12px;
+}
+
+.footer-column ul li a {
+    color: #bbb;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.footer-column ul li a:hover {
     color: pink;
+    padding-left: 8px; /* Hiệu ứng dịch chuyển nhẹ khi hover */
 }
 
-footer iframe {
-    width: 100%;
-    height: 200px;
-    border: none;
+.footer-column p {
+    font-size: 14px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Social Icons */
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 20px;
+    background: #222;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+.social-icons a:hover {
+    background: pink;
+    color: #000;
+    transform: translateY(-5px);
+}
+
+/* Map Style */
+.map-wrapper {
+    overflow: hidden;
     border-radius: 10px;
+    border: 1px solid #333;
+    height: 180px;
+}
+
+.map-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    filter: grayscale(100%) invert(90%) contrast(90%); /* Làm map trông nghệ thuật hơn, hợp màu đen */
+}
+
+.map-wrapper iframe:hover {
+    filter: none; /* Trở về màu gốc khi di chuột vào */
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #222;
+    font-size: 13px;
+    color: pink;
 }
